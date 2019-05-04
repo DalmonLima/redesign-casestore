@@ -13,7 +13,7 @@
 .section-header input{
 	width: 100%;
 }
-[data-icon]:before {
+[data-icon]{
   font-size: 20px;
 }
 .product-image{
@@ -24,6 +24,20 @@
 	width: 100%;
 	max-width: 540px;
 }
+.product-name{
+	font-size: 18px;
+}
+.progress+.time-limit{
+	height: 5px;
+	margin-bottom: 0px;
+}
+.stock-data{
+	display: flex;
+	justify-content: space-between;
+}
+.time-remaining{
+	color: #b12704;
+}
 .special-offer{
 	background-color: #444;
 	color: #fff;
@@ -31,15 +45,15 @@
 	text-align: center;
 	padding: 10px;
 }
-.product-name{
-	font-size: 18px;
-}
 .product-price-outdated{
 	color: #333;
 	text-decoration: line-through;
 }
 .product-price{
 	color: #b12704;
+}
+.model-select{
+height: 45px;
 }
 
 @media (min-width: 576px) {
