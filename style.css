@@ -27,9 +27,16 @@
 .product-name{
 	font-size: 18px;
 }
+.review [data-icon]{
+  font-size: 15px;
+}
 .progress+.time-limit{
 	height: 5px;
 	margin-bottom: 0px;
+}
+
+.time-limit > .progress-bar{
+	color: #ec8ab3;
 }
 .stock-data{
 	display: flex;
@@ -45,15 +52,21 @@
 	text-align: center;
 	padding: 10px;
 }
-.product-price-outdated{
+.price-outdated{
 	color: #333;
 	text-decoration: line-through;
 }
-.product-price{
+.actual-price{
 	color: #b12704;
 }
 .model-select{
 height: 45px;
+}
+.section-divider span{
+	background-color: #fff;
+}
+.section-divider hr{
+	color: #c4c4c4;
 }
 
 @media (min-width: 576px) {
