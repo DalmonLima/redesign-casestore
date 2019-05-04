@@ -41,6 +41,8 @@
 .stock-data{
 	display: flex;
 	justify-content: space-between;
+	font-size: 12px;
+	color: #808080;
 }
 .time-remaining{
 	color: #b12704;
@@ -59,16 +61,66 @@
 .actual-price{
 	color: #b12704;
 }
-.model-select{
-height: 45px;
-}
-.section-divider span{
+.section-divider{
 	background-color: #fff;
+	position: relative;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 11px;
+	height: 14px;
+	margin-bottom: 7px;
+	margin-top: 20px;
 }
 .section-divider hr{
 	color: #c4c4c4;
+	position: absolute;
+	margin: 0;
+	top: 50%;
+	left: 0;
+	right: 0;
+	border: 0;
+	border-top: 1px solid #eee;
+	z-index: 1;
+}
+.section-divider span{
+	display: inline-block;
+    padding: 0 10px;
+    z-index: 2;
+    position: absolute;
+    left: 10px;
+    background: #fff;
 }
 
+.input-component label{
+	display: inline-block;
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #808080;
+	margin-bottom: 3px;
+}
+.input-component input{
+	height: 45px;
+}
+
+.input-component select{
+	height: 45px;
+}
+
+.description{
+	font-size: 10px;
+}
+
+.social{
+	height: 42px;
+	width: 42px;
+	background-color: #c4c4c4;
+}
+
+.social li{
+	display: inline-block;
+	list-style-type: none;
+    text-align: left;
+}
 @media (min-width: 576px) {
 
 
