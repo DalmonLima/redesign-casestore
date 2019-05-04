@@ -1,0 +1,351 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"ro",
+				"row"
+			],
+			[
+				"backgroun-c",
+				"background-color\tproperty"
+			],
+			[
+				"ba",
+				"background-color\tproperty"
+			],
+			[
+				"col-",
+				"col-6"
+			],
+			[
+				"margin",
+				"margin-top\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"tot",
+				"totalAnteriorMilhar"
+			],
+			[
+				"novo",
+				"novoValor"
+			],
+			[
+				"t",
+				"thead\tTag"
+			],
+			[
+				"tr",
+				"tr\tTag"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"ca",
+				"cardValue"
+			],
+			[
+				"card",
+				"cardType"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"d",
+				"div\tTag"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"head",
+				"header\tTag"
+			],
+			[
+				"ten",
+				"tentar"
+			],
+			[
+				"age",
+				"ageDays"
+			],
+			[
+				"las",
+				"lastName"
+			],
+			[
+				"first",
+				"firstName"
+			],
+			[
+				"li",
+				"link\tTag"
+			],
+			[
+				"lance",
+				"lanceAtual"
+			],
+			[
+				"da",
+				"daVez"
+			],
+			[
+				"if",
+				"ife\tif … else"
+			],
+			[
+				"lei",
+				"leilaoDaVez"
+			],
+			[
+				"le",
+				"leilaoDaVez"
+			],
+			[
+				"produto",
+				"produtoLeiloado"
+			],
+			[
+				"ra",
+				"randomPrice"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"backgroun",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Refres",
+				"Preferences: Browse Packages"
+			],
+			[
+				"insta",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/ozeiasdsl/Documents/backup/who_is_that_pokemon/index.html",
+		"/Users/ozeiasdsl/Documents/backup/who_is_that_pokemon/script.js",
+		"/Users/ozeiasdsl/Local Sites/dalmonlima/app/public/wp-content/themes/mytheme/index.php",
+		"/Users/ozeiasdsl/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/ozeiasdsl/Desktop/WEB1/pages/product.html",
+		"/Users/ozeiasdsl/Desktop/WEB1/pages/index.html",
+		"/Users/ozeiasdsl/Desktop/WEB1/js/main_script.js",
+		"/Users/ozeiasdsl/Desktop/WEB1/css/main_style.css",
+		"/Users/ozeiasdsl/Desktop/WEB1/pages/login.html",
+		"/Users/ozeiasdsl/Desktop/WEB1/pages/register.html",
+		"/Users/ozeiasdsl/Desktop/WEB1/pages/cart.html",
+		"/Users/ozeiasdsl/Downloads/smartpaperserver-master/README.md",
+		"/Users/ozeiasdsl/Desktop/WEB1/css/style.css",
+		"/Users/ozeiasdsl/Desktop/WEB1/menubar.html",
+		"/Users/ozeiasdsl/Desktop/WEB1/style.css",
+		"/Users/ozeiasdsl/Desktop/WEB1/index.html",
+		"/Users/ozeiasdsl/Desktop/WEB1/product.html",
+		"/Users/ozeiasdsl/Desktop/WEB1/main_script.js",
+		"/Users/ozeiasdsl/Desktop/WEB1/script.js",
+		"/Users/ozeiasdsl/Desktop/controlBetter.html",
+		"/Users/ozeiasdsl/Desktop/controle_jogo.html",
+		"/Users/ozeiasdsl/Desktop/controle.html",
+		"/Users/ozeiasdsl/workspace/Databases/cats.js",
+		"/Users/ozeiasdsl/Desktop/Imitation Training/style.css",
+		"/Users/ozeiasdsl/Desktop/Imitation Training/uxdesign.cc.html",
+		"/Users/ozeiasdsl/Desktop/helpMe/index.html",
+		"/Users/ozeiasdsl/Desktop/helpMe/server.js",
+		"/Users/ozeiasdsl/Desktop/JS Practice/Practice 4/index.html",
+		"/Users/ozeiasdsl/Desktop/JS Practice/Practice 4/script.js",
+		"/Users/ozeiasdsl/Desktop/JS Practice/Practice 3/script.js",
+		"/Users/ozeiasdsl/Desktop/JS Practice/Practice 2/script.js",
+		"/Users/ozeiasdsl/Desktop/Exercícios/Exercício 1/script.html",
+		"/Users/ozeiasdsl/Desktop/teste.html",
+		"/Users/ozeiasdsl/Desktop/app/views/acabou.ejs",
+		"/Users/ozeiasdsl/Desktop/app/views/encerrados.ejs",
+		"/Users/ozeiasdsl/Desktop/app/views/lance.ejs",
+		"/Users/ozeiasdsl/Desktop/app/server.js",
+		"/Users/ozeiasdsl/Desktop/app/views/historico.ejs",
+		"/Users/ozeiasdsl/Desktop/app/lance.ejs",
+		"/Users/ozeiasdsl/Desktop/server.js",
+		"/Users/ozeiasdsl/Desktop/script_work-master/worker.js",
+		"/Users/ozeiasdsl/Desktop/untitled.js",
+		"/Users/ozeiasdsl/Desktop/sistema/FirstExpressApp/app.js",
+		"/Users/ozeiasdsl/Desktop/sistema/MyShop/listProducts.js",
+		"/Users/ozeiasdsl/Desktop/sistema/grader.js",
+		"/Users/ozeiasdsl/Desktop/sistema/hello.js",
+		"/Users/ozeiasdsl/Desktop/alien.html"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "style.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

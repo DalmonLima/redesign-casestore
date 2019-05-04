@@ -1,0 +1,53 @@
+.section-header{
+	height: 45px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.section-header input{
+	width: 100%;
+}
+[data-icon]:before {
+  font-size: 20px;
+}
+.product-image{
+	text-align: center;
+	margin-top: 20px;
+}
+.product-image img{
+	height: 300px;
+}
+.special-offer{
+	background-color: #444;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	padding: 10px;
+}
+.product-name{
+	font-size: 18px;
+}
+.product-price-outdated{
+	color: #333;
+	text-decoration: line-through;
+}
+.product-price{
+	color: #b12704;
+}
+
+@media (min-width: 576px) {
+
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
