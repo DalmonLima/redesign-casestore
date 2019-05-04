@@ -4,6 +4,12 @@
 	justify-content: space-between;
 	align-items: center;
 }
+
+.brand-section{
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
 .section-header input{
 	width: 100%;
 }
@@ -15,7 +21,8 @@
 	margin-top: 20px;
 }
 .product-image img{
-	height: 300px;
+	width: 100%;
+	max-width: 540px;
 }
 .special-offer{
 	background-color: #444;
