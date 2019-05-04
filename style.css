@@ -53,6 +53,7 @@
 	font-size: 12px;
 	text-align: center;
 	padding: 10px;
+	font-weight: bold;
 }
 .price-outdated{
 	color: #333;
@@ -111,16 +112,46 @@
 }
 
 .social{
+	list-style-type: none;
+	text-decoration: none;
+	display: flex;
+	padding: 0px;
+	width: 146px;
+	justify-content: space-between;
+}
+
+.social-media{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 42px;
 	width: 42px;
+	padding-top: 8px;
 	background-color: #c4c4c4;
 }
 
-.social li{
-	display: inline-block;
-	list-style-type: none;
-    text-align: left;
+.social-media a{
+	color: #999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
 }
+
+.quality img{
+	width: 100%;
+	height: auto;
+}
+
+.suggestion-section ul{
+	list-style-type: none;
+	text-decoration: none;
+	display: flex;
+	padding: 0px;
+	justify-content: space-between;
+}
+
+
+
 @media (min-width: 576px) {
 
 
