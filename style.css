@@ -1,36 +1,78 @@
-.section-header{
+div.container.section-header{
 	height: 45px;
-	display: flex;
-	justify-content: space-between;
 	align-items: center;
 }
 
-.brand-section{
-	width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
+.main-header{
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	padding: 0;
+	align-items: center;
+	margin-top: 10px;
 }
+
 .section-header input{
 	width: 100%;
 }
+
+.menu-section{
+	display: none;
+	padding-top: 10px;
+}
+
+.menu{
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
 [data-icon]{
   font-size: 20px;
+  color: #808080;
 }
-.product-image{
-	text-align: center;
+
+.product-header{
+	display: flex;
+	justify-content: space-between;
+}
+
+.product-header span{
 	margin-top: 20px;
 }
+
+.product-image{
+	margin-top: 20px;
+}
+
 .product-image img{
 	width: 100%;
 	max-width: 540px;
 }
+
+.product-info{
+	margin-bottom: 20px;
+}
+
 .product-name{
 	font-size: 18px;
 }
+
 .review [data-icon]{
   font-size: 15px;
 }
-.progress+.time-limit{
+
+.review-general [data-icon]{
+  font-size: 20px;
+}
+div.progress{
+	margin-bottom: 0px;
+}
+
+
+.progress .time-limit{
 	height: 5px;
 	margin-bottom: 0px;
 }
@@ -38,30 +80,51 @@
 .time-limit > .progress-bar{
 	color: #ec8ab3;
 }
+
+.stock-component{
+	margin-top: 20px;
+}
+
 .stock-data{
 	display: flex;
 	justify-content: space-between;
 	font-size: 12px;
 	color: #808080;
 }
+
 .time-remaining{
 	color: #b12704;
 }
+
 .special-offer{
 	background-color: #444;
 	color: #fff;
 	font-size: 12px;
-	text-align: center;
 	padding: 10px;
 	font-weight: bold;
 }
+
+.special-offer p{
+	margin-top: 10px;
+}
+
+.product-price{
+	font-size: 18px;
+}
+
 .price-outdated{
 	color: #333;
 	text-decoration: line-through;
 }
+
 .actual-price{
 	color: #b12704;
 }
+
+.buy-now{
+	width: 100%;
+}
+
 .section-divider{
 	background-color: #fff;
 	position: relative;
@@ -72,6 +135,7 @@
 	margin-bottom: 7px;
 	margin-top: 20px;
 }
+
 .section-divider hr{
 	color: #c4c4c4;
 	position: absolute;
@@ -83,6 +147,7 @@
 	border-top: 1px solid #eee;
 	z-index: 1;
 }
+
 .section-divider span{
 	display: inline-block;
     padding: 0 10px;
@@ -90,6 +155,7 @@
     position: absolute;
     left: 10px;
     background: #fff;
+    color: #808080;
 }
 
 .input-component label{
@@ -99,6 +165,7 @@
 	color: #808080;
 	margin-bottom: 3px;
 }
+
 .input-component input{
 	height: 45px;
 }
@@ -109,6 +176,7 @@
 
 .description{
 	font-size: 10px;
+	color: #808080;
 }
 
 .social{
@@ -150,6 +218,65 @@
 	justify-content: space-between;
 }
 
+.review-section{
+	text-align: center;
+}
+
+.overall{
+	margin-bottom: 20px;
+}
+
+.product-review{
+	margin-top: 15px;
+	text-align: left;
+}
+
+.product-review-period{
+	color: #808080;
+	white-space: nowrap;
+}
+
+.product-review-title{
+	margin-top: 0px;
+}
+
+.product-review-heading{
+	margin-bottom: 10px;
+}
+
+.review-header{
+	display: flex;
+	justify-content: space-between;
+}
+
+.newsletter{
+	background-color: #F2F2F6;
+	color: #808080;
+	padding: 15px;
+	margin-top: 20px;
+}
+
+.newsletter [data-icon]{
+	font-size: 30px;
+}
+
+.newsletter h4{
+	color: #333;
+}
+
+.centralize-content{
+	text-align: center;
+}
+
+.footer{
+	padding-top: 15px;
+	font-size: 12px;
+}
+
+.footer p{
+	padding-top: 10px;
+}
+
 
 
 @media (min-width: 576px) {
@@ -163,8 +290,11 @@
 
 @media (min-width: 992px) {
 
+
 }
 
 @media (min-width: 1200px) {
-
+	.menu-section{
+		display: block
+	}
 }
