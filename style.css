@@ -115,6 +115,7 @@ div.progress{
 .price-outdated{
 	color: #333;
 	text-decoration: line-through;
+	margin-right: 10px;
 }
 
 .actual-price{
@@ -210,12 +211,23 @@ div.progress{
 	height: auto;
 }
 
+.suggestion-section{
+	margin-top: 20px;
+}
+
 .suggestion-section ul{
 	list-style-type: none;
 	text-decoration: none;
 	display: flex;
 	padding: 0px;
 	justify-content: space-between;
+}
+
+.suggestion-carrousel{
+	overflow-x: auto;
+}
+.suggestion-carrousel-item{
+	width: 200px;
 }
 
 .review-section{
