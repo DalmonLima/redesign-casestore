@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<link type="text/css" rel="stylesheet" href="css/normalize.css" />
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 	<!-- Add additional stylesheets next -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Desafio Gocase</title>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
@@ -18,69 +24,98 @@
 			<p>A PARTIR DE R$349,90 <b>GANHE UMA CAIXA MINHA COLEÇÃO</b></p>
 		</div>
 	</div>
-		<div class="container section-header large-header">
-			<ul class="main-header">
-				<li>
-					<a href="/"><img src="images/logo_gocase.png"></a>
-				</li>
-				<li>
-					<input class="form-control" type="search" placeholder="Procure por temas, artes e produtos" aria-label="Search">
-				</li>
-				<li>
-					<span class="login">ENTRAR</span>
+		<div class="container section-header">
+			<nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+			    <span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="images/logo_gocase.png"></a>
+				<form class="d-inline w-100">
+		      		<input class="form-control mr-sm-2 search" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+		    	</form>
+		    	<button class="btn">
 					<span data-icon="&#xe015"></span>
-				</li>
-			</ul>
+		    	</button>
+			</nav>
+			<nav class="navbar navbar-expand-lg navbar-light justify-content-between" style="height: 10px; display: inline-block; list-style-type: none;">
+				<div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+			    <ul class="navbar-nav mr-auto">
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  CATEGORIAS
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <a class="dropdown-item" href="#">Ação</a>
+						  <a class="dropdown-item" href="#">Outra ação</a>
+						  <div class="dropdown-divider"></div>
+						  <a class="dropdown-item" href="#">Algo mais aqui</a>
+						</div>
+					</li>
+
+					<li class="nav-item">
+			       		<a class="nav-link" href="#">OFERTAS RELÂMPAGO <span class="sr-only">(página atual)</span></a>
+			      	</li>
+
+			      	<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  CAPINHAS
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <a class="dropdown-item" href="#">Ação</a>
+						  <a class="dropdown-item" href="#">Outra ação</a>
+						  <div class="dropdown-divider"></div>
+						  <a class="dropdown-item" href="#">Algo mais aqui</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  ACESSÓRIOS
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <a class="dropdown-item" href="#">Ação</a>
+						  <a class="dropdown-item" href="#">Outra ação</a>
+						  <div class="dropdown-divider"></div>
+						  <a class="dropdown-item" href="#">Algo mais aqui</a>
+						</div>
+					</li>
+
+					<li class="nav-item">
+			       		<a class="nav-link" href="#">MOCHILAS <span class="sr-only">(página atual)</span></a>
+			      	</li>
+
+					<li class="nav-item">
+			       		<a class="nav-link" href="#">CLUTCH CAPA NOTEBOOK <span class="sr-only">(página atual)</span></a>
+			      	</li>
+
+			      	<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  IPHONE
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <a class="dropdown-item" href="#">Ação</a>
+						  <a class="dropdown-item" href="#">Outra ação</a>
+						  <div class="dropdown-divider"></div>
+						  <a class="dropdown-item" href="#">Algo mais aqui</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						  OUTROS MODELOS
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <a class="dropdown-item" href="#">Ação</a>
+						  <a class="dropdown-item" href="#">Outra ação</a>
+						  <div class="dropdown-divider"></div>
+						  <a class="dropdown-item" href="#">Algo mais aqui</a>
+						</div>
+					</li>
+				</ul>
+			</nav>
 		</div>
-		<div class="container section-header smaller-header">
-			<ul class="main-header">
-				<li>
-					<span data-icon="&#x61"></span>
-				</li>
-				<li>
-					<a href="/"><img src="images/logo_gocase.png"></a>
-				</li>
-				<li>
-					<span data-icon="&#xe015"></span>
-				</li>
-			</ul>
-		</div>
-		<div class="container section-header header-search">
-			<input class="form-control" type="search" placeholder="Procure por temas, artes e produtos" aria-label="Search">
-		</div>
-		<div class="container section-header menu-section">
-			<ul class="menu">
-				<li class="">
-					CATEGORIAS
-					<i class="arrow_carrot-down main-menu__arrow--top"></i>
-				</li>
-				<li class="">
-					OFERTAS RELÂMPAGO
-				</li>
-				<li class="">
-					CAPINHAS
-						<i class="arrow_carrot-down main-menu__arrow--top"></i>
-				</li>
-				<li class="">
-					ACESSÓRIOS
-						<i class="arrow_carrot-down main-menu__arrow--top"></i>
-				</li>
-				<li class="">
-					MOCHILAS
-				</li>
-				<li class="">
-					CLUTCH CAPA NOTEBOOK
-				</li>
-				<li class="">
-					IPHONE
-					<i class="arrow_carrot-down main-menu__arrow--top"></i>
-				</li>
-				<li class="">
-					OUTROS MODELOS
-					<i class="arrow_carrot-down main-menu__arrow--top"></i>
-				</li>
-			</ul>
-		</div>
+	</div>
 	</header>
 	<div class="container-fluid section-header centralize-content special-offer offer-small">
 		<div col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 centralize-content>
@@ -550,20 +585,11 @@
 
 	<!-- Elegant font -->
 	<link rel="stylesheet" href="elegant_font/HTML CSS/style.css" crossorigin="anonymous">
-
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-	<!-- Script -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- my Script -->
 	<script src="script.js"></script>
 
 </body>
