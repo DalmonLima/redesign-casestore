@@ -14,114 +14,118 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Desafio Gocase</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
 <body>
-	<header>	
-	<div class="container-fluid section-header centralize-content special-offer offer-large">
+	<header>
+		<div class="container">
+			<nav class="navbar navbar-expand-xl navbar-light heading">
+        <div class="container">
+          <button class="navbar-toggler hamburguer-button" type="button" data-toggle="collapse">
+  			    <span class="navbar-toggler-icon"></span>
+  				</button>
+  				<a class="navbar-brand" href="#"><img src="images/logo_gocase.png"></a>
+          <div class="search w-100">
+            <form>
+                <input class="form-control search text-field" type="search" placeholder="Pesquisar">
+            </form>
+          </div>
+  	    	<button class="btn">
+  				  <span><img src="elegant_font/images/svg/icon_cart_alt.svg"></span>
+              <!-- data-icon="&#xe015" -->
+  	    	</button>
+        </div>
+        <div class="w-100">
+          <form class="d-block d-xl-none">
+            <input class="form-control text-field" type="search" placeholder="Pesquisar">
+          </form>
+        </div>
+        <div class="container collapsed-section">
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+    					<li class="nav-item dropdown">
+    						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    						  CATEGORIAS
+    						</a>
+    						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    						  <a class="dropdown-item" href="#">Ação</a>
+    						  <a class="dropdown-item" href="#">Outra ação</a>
+    						  <div class="dropdown-divider"></div>
+    						  <a class="dropdown-item" href="#">Algo mais aqui</a>
+    						</div>
+    					</li>
+
+    					<li class="nav-item">
+    			       		<a class="nav-link" href="#">OFERTAS RELÂMPAGO <span class="sr-only">(página atual)</span></a>
+    			      	</li>
+
+    			      	<li class="nav-item dropdown">
+    						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    						  CAPINHAS
+    						</a>
+    						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    						  <a class="dropdown-item" href="#">Ação</a>
+    						  <a class="dropdown-item" href="#">Outra ação</a>
+    						  <div class="dropdown-divider"></div>
+    						  <a class="dropdown-item" href="#">Algo mais aqui</a>
+    						</div>
+    					</li>
+
+    					<li class="nav-item dropdown">
+    						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    						  ACESSÓRIOS
+    						</a>
+    						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    						  <a class="dropdown-item" href="#">Ação</a>
+    						  <a class="dropdown-item" href="#">Outra ação</a>
+    						  <div class="dropdown-divider"></div>
+    						  <a class="dropdown-item" href="#">Algo mais aqui</a>
+    						</div>
+    					</li>
+
+    					<li class="nav-item">
+  		       		<a class="nav-link" href="#">MOCHILAS <span class="sr-only">(página atual)</span></a>
+  		      	</li>
+
+    					<li class="nav-item">
+  		       		<a class="nav-link" href="#">CLUTCH CAPA NOTEBOOK <span class="sr-only">(página atual)</span></a>
+  		      	</li>
+
+  		      	<li class="nav-item dropdown">
+    						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    						  IPHONE
+    						</a>
+    						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    						  <a class="dropdown-item" href="#">Ação</a>
+    						  <a class="dropdown-item" href="#">Outra ação</a>
+    						  <div class="dropdown-divider"></div>
+    						  <a class="dropdown-item" href="#">Algo mais aqui</a>
+    						</div>
+    					</li>
+
+    					<li class="nav-item dropdown">
+    						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    						  OUTROS MODELOS
+    						</a>
+    						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    						  <a class="dropdown-item" href="#">Ação</a>
+    						  <a class="dropdown-item" href="#">Outra ação</a>
+    						  <div class="dropdown-divider"></div>
+    						  <a class="dropdown-item" href="#">Algo mais aqui</a>
+    						</div>
+    					</li>
+  				  </ul>
+          </div>
+        </div>
+	    </nav>
+	  </div>
+  </header>
+	<!-- <div class="container-fluid section-header centralize-content special-offer offer-small">
 		<div col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 centralize-content>
 			<p>A PARTIR DE R$349,90 <b>GANHE UMA CAIXA MINHA COLEÇÃO</b></p>
 		</div>
-	</div>
-		<div class="container section-header">
-			<nav class="navbar navbar-expand-lg navbar-light justify-content-between">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-			    <span class="navbar-toggler-icon"></span>
-				</button>
-				<a class="navbar-brand" href="#"><img src="images/logo_gocase.png"></a>
-				<form class="d-inline w-100">
-		      		<input class="form-control mr-sm-2 search" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-		    	</form>
-		    	<button class="btn">
-					<span data-icon="&#xe015"></span>
-		    	</button>
-			</nav>
-			<nav class="navbar navbar-expand-lg navbar-light justify-content-between" style="height: 10px; display: inline-block; list-style-type: none;">
-				<div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-			    <ul class="navbar-nav mr-auto">
-
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						  CATEGORIAS
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						  <a class="dropdown-item" href="#">Ação</a>
-						  <a class="dropdown-item" href="#">Outra ação</a>
-						  <div class="dropdown-divider"></div>
-						  <a class="dropdown-item" href="#">Algo mais aqui</a>
-						</div>
-					</li>
-
-					<li class="nav-item">
-			       		<a class="nav-link" href="#">OFERTAS RELÂMPAGO <span class="sr-only">(página atual)</span></a>
-			      	</li>
-
-			      	<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						  CAPINHAS
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						  <a class="dropdown-item" href="#">Ação</a>
-						  <a class="dropdown-item" href="#">Outra ação</a>
-						  <div class="dropdown-divider"></div>
-						  <a class="dropdown-item" href="#">Algo mais aqui</a>
-						</div>
-					</li>
-
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						  ACESSÓRIOS
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						  <a class="dropdown-item" href="#">Ação</a>
-						  <a class="dropdown-item" href="#">Outra ação</a>
-						  <div class="dropdown-divider"></div>
-						  <a class="dropdown-item" href="#">Algo mais aqui</a>
-						</div>
-					</li>
-
-					<li class="nav-item">
-			       		<a class="nav-link" href="#">MOCHILAS <span class="sr-only">(página atual)</span></a>
-			      	</li>
-
-					<li class="nav-item">
-			       		<a class="nav-link" href="#">CLUTCH CAPA NOTEBOOK <span class="sr-only">(página atual)</span></a>
-			      	</li>
-
-			      	<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						  IPHONE
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						  <a class="dropdown-item" href="#">Ação</a>
-						  <a class="dropdown-item" href="#">Outra ação</a>
-						  <div class="dropdown-divider"></div>
-						  <a class="dropdown-item" href="#">Algo mais aqui</a>
-						</div>
-					</li>
-
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						  OUTROS MODELOS
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						  <a class="dropdown-item" href="#">Ação</a>
-						  <a class="dropdown-item" href="#">Outra ação</a>
-						  <div class="dropdown-divider"></div>
-						  <a class="dropdown-item" href="#">Algo mais aqui</a>
-						</div>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-	</header>
-	<div class="container-fluid section-header centralize-content special-offer offer-small">
-		<div col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 centralize-content>
-			<p>A PARTIR DE R$349,90 <b>GANHE UMA CAIXA MINHA COLEÇÃO</b></p>
-		</div>
-	</div>
+	</div> -->
 	<div class="container product">
 		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 centralize-content product-image">
 			<img src="images/main_product.jpg">
@@ -131,7 +135,7 @@
 				<h1 class="product-name">Capinha para celular Poeira das estrelas Manuscrita</h1>
 				<span data-icon="&#xe0a0"></span>
 			</div>
-			
+
 			<div class="review">
 				<span data-icon="&#xe033"></span>
 				<span data-icon="&#xe033"></span>
@@ -322,7 +326,7 @@
 					</li>
 				</ul>
 			</div>
-			
+
 		</div>
 
 		<div class="suggestion-section">
@@ -500,10 +504,10 @@
 		<div class="product-review">
 			<div class="product-review-heading">
 				<div class="review-header">
-					<h4 class="product-review-title">Excelente</h4> 
+					<h4 class="product-review-title">Excelente</h4>
 					<span class="product-review-period">Há 8 dias atrás</span>
 				</div>
-				<span class="product-review-user">Andrey</span> 
+				<span class="product-review-user">Andrey</span>
 				<div>
 					<span data-icon="&#xe033"></span>
 					<span data-icon="&#xe033"></span>
@@ -511,8 +515,8 @@
 					<span data-icon="&#xe033"></span>
 					<span data-icon="&#xe033"></span>
 				</div>
-			</div> 
-			<div class="product-review-post"> 
+			</div>
+			<div class="product-review-post">
 				<p class="product-review-text">Capinha excelente. Fiquei impressionado com a qualidade do produto!</p>
 			</div>
 			<hr>
@@ -520,10 +524,10 @@
 		<div class="product-review">
 			<div class="product-review-heading">
 				<div class="review-header">
-					<h4 class="product-review-title">Excelente</h4> 
+					<h4 class="product-review-title">Excelente</h4>
 					<span class="product-review-period">Há 8 dias atrás</span>
 				</div>
-				<span class="product-review-user">Andrey</span> 
+				<span class="product-review-user">Andrey</span>
 				<div>
 					<span data-icon="&#xe033"></span>
 					<span data-icon="&#xe033"></span>
@@ -531,8 +535,8 @@
 					<span data-icon="&#xe033"></span>
 					<span data-icon="&#xe033"></span>
 				</div>
-			</div> 
-			<div class="product-review-post"> 
+			</div>
+			<div class="product-review-post">
 				<p class="product-review-text">Capinha excelente. Fiquei impressionado com a qualidade do produto!</p>
 			</div>
 			<hr>
@@ -540,10 +544,10 @@
 		<div class="product-review">
 			<div class="product-review-heading">
 				<div class="review-header">
-					<h4 class="product-review-title">Excelente</h4> 
+					<h4 class="product-review-title">Excelente</h4>
 					<span class="product-review-period">Há 8 dias atrás</span>
 				</div>
-				<span class="product-review-user">Andrey</span> 
+				<span class="product-review-user">Andrey</span>
 				<div>
 					<span data-icon="&#xe033"></span>
 					<span data-icon="&#xe033"></span>
@@ -551,8 +555,8 @@
 					<span data-icon="&#xe033"></span>
 					<span data-icon="&#xe033"></span>
 				</div>
-			</div> 
-			<div class="product-review-post"> 
+			</div>
+			<div class="product-review-post">
 				<p class="product-review-text">Capinha excelente. Fiquei impressionado com a qualidade do produto!</p>
 			</div>
 			<hr>
