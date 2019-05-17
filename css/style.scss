@@ -3,9 +3,21 @@ div.container.section-header{
 	align-items: center;
 }
 
+.lgr-header-elements{
+		display: none;
+}
+
+.slr-header-elements{
+		display: block;
+}
+
+.enter-small-menu{
+	border-top: 1px solid #eee
+}
+
+
 .search{
 	padding: 0px 30px;
-	display: none;
 }
 
 .small-search{
@@ -363,8 +375,12 @@ div.progress{
 }
 
 @media (min-width: 1200px) {
-	.search{
-		display: block;
+
+	.lgr-header-elements{
+			display: block;
+	}
+	.slr-header-elements{
+			display: none;
 	}
 
 	.main-header input{
