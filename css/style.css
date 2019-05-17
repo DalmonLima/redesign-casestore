@@ -7,6 +7,45 @@ div.container.section-header {
   display: none;
 }
 
+.realtives {
+  position: relative;
+}
+
+#owl-demo .item {
+  margin: 3px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#owl-demo .item img {
+  width: 100%;
+  height: 100px;
+}
+
+.customNavigation {
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #333;
+}
+
+.customNavigation a {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+select {
+  font-size: 1rem;
+}
+
 .slr-header-elements {
   display: block;
 }
@@ -266,6 +305,10 @@ div.progress {
 
 .review-section {
   text-align: center;
+}
+
+#comments {
+  text-align: left;
 }
 
 .overall {
