@@ -334,14 +334,18 @@ div.progress{
 	margin-bottom: 20px;
 }
 
-.product-review{
+.comment{
 	margin-top: 15px;
 	text-align: left;
+	border-radius: 8px;
+	border: 1px #eee solid;
+	padding: 20px;
 }
 
 .product-review-period{
 	color: #808080;
 	white-space: nowrap;
+	font-size: 12px;
 }
 
 .product-review-title{
@@ -416,6 +420,9 @@ div.progress{
 }
 
 @media (min-width: 992px) {
+	.comment-note{
+		text-align: right;
+	}
 
 
 }
