@@ -395,6 +395,43 @@ div.progress {
   }
 }
 @media (min-width: 1200px) {
+  .menu-item a {
+    align-items: center;
+  }
+
+  .menu-item a {
+    position: relative;
+    border-bottom: 3px solid transparent;
+  }
+
+  .menu-item > a:before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 50%;
+    width: 0%;
+    height: 100%;
+    opacity: 0;
+    border-bottom: 3px solid #7122fa;
+  }
+
+  .menu-item > a:hover:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    border-bottom: 3px solid #7122fa;
+    transform: translate(0%, 0px);
+    transition-duration: 0.7s;
+  }
+
+  .menu-item .dropdown-menu {
+    border-radius: 0px;
+  }
+
   .lgr-header-elements {
     display: block;
   }
