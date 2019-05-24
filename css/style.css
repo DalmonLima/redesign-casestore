@@ -1,3 +1,7 @@
+body {
+  background-color: #fbfbfb;
+}
+
 div.container.section-header {
   height: 45px;
   align-items: center;
@@ -72,7 +76,7 @@ select {
 }
 
 header {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
   font-size: 12px;
 }
 header nav.heading {
@@ -86,6 +90,12 @@ header nav.heading .container .nav-toggler {
 header form {
   display: block;
 }
+.content {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
 .main-header {
   display: flex;
   justify-content: space-between;
@@ -109,13 +119,45 @@ header form {
   justify-content: space-between;
 }
 
-.product-image {
+.page-section {
   margin-top: 20px;
 }
 
-.product-image img {
+.content-order {
+  flex-direction: column-reverse;
+}
+
+.page-section img {
   width: 100%;
   max-width: 540px;
+}
+
+.product-images {
+  padding-left: 0px;
+  display: inline-flex;
+}
+
+.preview-images {
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.preview-images a {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 3px solid #eee;
+  padding: 5px;
+}
+
+.preview-images.active a {
+  border-color: #FF7676;
+}
+
+.preview-images a:hover {
+  border: 3px solid #FFA7A7;
 }
 
 .product-info {
@@ -124,7 +166,8 @@ header form {
 }
 
 .product-name {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .review [data-icon] {
@@ -145,7 +188,8 @@ div.progress {
 }
 
 .time-limit > .progress-bar {
-  color: #ec8ab3;
+  color: #FF7676;
+  background-color: #FF7676;
 }
 
 .stock-component {
@@ -188,14 +232,41 @@ div.progress {
   color: #333;
   text-decoration: line-through;
   margin-right: 10px;
+  background: aliceblue;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
 }
 
 .actual-price {
-  color: #b12704;
+  color: #333;
+  font-weight: 500;
 }
 
-.buy-now {
-  width: 100%;
+.primary-action {
+  border-radius: 4px;
+  background-color: #FF7676;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.primary-action:hover {
+  background-color: #FFA7A7;
+  color: #fff;
+}
+
+.secundary-action {
+  border-radius: 4px;
+  border-color: #FF7676;
+  color: #FF7676;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.secundary-action:hover {
+  border-color: #FFA7A7;
+  color: #FFA7A7;
 }
 
 .section-divider {
@@ -245,6 +316,32 @@ div.progress {
 
 .input-component select {
   height: 45px;
+  font-size: 1rem;
+}
+
+#color-selection {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+}
+
+.colorPicker {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  border: 2px solid #eee;
+  border-radius: 50%;
+}
+
+[data-color=white] {
+  background-color: white;
+}
+
+[data-color=pink] {
+  background-color: lightpink;
 }
 
 .description {
@@ -337,6 +434,23 @@ div.progress {
   margin-bottom: 10px;
 }
 
+.comment-footer {
+  display: flex;
+}
+
+.user-info {
+  padding-left: 10px;
+}
+
+.user-image {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
 .review-header {
   display: flex;
   justify-content: space-between;
@@ -376,10 +490,6 @@ div.progress {
   -webkit-appearance: none;
 }
 
-.centralize-content {
-  text-align: center;
-}
-
 .footer {
   padding-top: 15px;
   font-size: 12px;
@@ -390,6 +500,15 @@ div.progress {
 }
 
 @media (min-width: 992px) {
+  .product-images {
+    padding-left: 0px;
+    display: block;
+  }
+
+  .content-order {
+    flex-direction: row;
+  }
+
   .comment-note {
     text-align: right;
   }
@@ -412,7 +531,7 @@ div.progress {
     width: 0%;
     height: 100%;
     opacity: 0;
-    border-bottom: 3px solid #7122fa;
+    border-bottom: 3px solid #FF7676;
   }
 
   .menu-item > a:hover:before {
@@ -423,13 +542,19 @@ div.progress {
     width: 100%;
     height: 100%;
     opacity: 1;
-    border-bottom: 3px solid #7122fa;
+    border-bottom: 3px solid #FF7676;
     transform: translate(0%, 0px);
     transition-duration: 0.7s;
   }
 
   .menu-item .dropdown-menu {
     border-radius: 0px;
+    padding: 0px;
+  }
+
+  .dropdown-menu.show {
+    margin-top: -3px;
+    border-color: #eee;
   }
 
   .lgr-header-elements {

@@ -41,7 +41,7 @@ $(document).ready(function(){
           review = 'product-review' + i;
 
 
-          $('#comments').append('<div id="'+review+'" class="comment"><div class="product-review-heading"><div class="review-header row"><div class="col-sm-12 col-md-12 col-lg-6 col-xl-6"><h5 class="product-review-title"></h5></div><div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 comment-note"><span data-icon="*"></span><span data-icon="*"></span><span data-icon="*"></span><span data-icon="*"></span><span data-icon="*"></span></div></div></div><div class="product-review-post"><p class="product-review-text"></p></div><div><div><span class="product-review-author"></span></div><div><span class="product-review-period"></span></div></div></div>')
+          $('#comments').append('<div id="'+review+'" class="comment"><div class="product-review-heading"><div class="review-header row"><div class="col-sm-12 col-md-12 col-lg-6 col-xl-6"><h5 class="product-review-title"></h5></div><div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 comment-note"><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="far fa-star"></i></span></div></div></div><div class="product-review-post"><p class="product-review-text"></p></div><div class="comment-footer"><div><span class="user-image"></span></div><div class="user-info"><div><span class="product-review-author"></span></div><div><span class="product-review-period"></span></div></div></div></div>')
 
           $('#' + review + ' .product-review-author').html(author);
           $('#' + review + ' .product-review-title').html(title);
@@ -55,6 +55,19 @@ $(document).ready(function(){
       }
     });
   }
+
+  function imageUpdate(){
+    $( ".preview-images" ).click(function() {
+      var myImage = $(this).find('img').attr('src');
+      $('.preview-images').removeClass('active');
+      console.log(myImage);
+      $("#current-image").attr("src",myImage);
+      $(this).addClass('active');
+      return false;
+    });
+  }
+
+  imageUpdate();
 
   loadComment();
 

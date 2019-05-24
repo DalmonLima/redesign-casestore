@@ -1,3 +1,12 @@
+$content-bg: #fff;
+$body-bg: #fbfbfb;
+$main-color: #FF7676;
+$btn-hover: #FFA7A7;
+
+
+body{
+	background-color: $body-bg;
+}
 div.container.section-header{
 	height: 45px;
 	align-items: center;
@@ -38,11 +47,6 @@ div.container.section-header{
 		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	}
 
-
-
-
-
-
 select{
 	font-size: 1rem;
 }
@@ -74,7 +78,8 @@ select{
 }
 
 header {
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	// box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color: #fff;
 	font-size: 12px;
 
 	nav.heading {
@@ -98,7 +103,12 @@ header {
 	}
 }
 
-
+.content{
+	background-color: $content-bg;
+	// border: 2px solid aliceblue;
+	border-radius: 8px;
+	padding: 20px;
+}
 
 .main-header{
 	display: flex;
@@ -127,13 +137,48 @@ header {
 // 	margin-top: 20px;
 // }
 
-.product-image{
+.page-section{
 	margin-top: 20px;
 }
 
-.product-image img{
+.content-order{
+	flex-direction: column-reverse;
+}
+
+.page-section img{
 	width: 100%;
 	max-width: 540px;
+}
+
+// .product-image img{
+// 	width: 100%;
+// 	max-width: 540px;
+// }
+.product-images{
+	padding-left: 0px;
+	display: inline-flex;
+}
+.preview-images{
+	list-style-type: none;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+}
+
+.preview-images a{
+	max-width:100%;
+	border-radius: 8px;
+	border: 3px solid #eee;
+	padding: 5px;
+}
+
+.preview-images.active a{
+	border-color: $main-color;
+}
+
+.preview-images a:hover{
+	border: 3px solid $btn-hover;
 }
 
 .product-info{
@@ -142,7 +187,8 @@ header {
 }
 
 .product-name{
-	font-size: 18px;
+	font-size: 16px;
+	font-weight: 400;
 }
 
 .review [data-icon]{
@@ -163,7 +209,8 @@ div.progress{
 }
 
 .time-limit > .progress-bar{
-	color: #ec8ab3;
+	color: $main-color;
+	background-color: $main-color;
 }
 
 .stock-component{
@@ -206,14 +253,47 @@ div.progress{
 	color: #333;
 	text-decoration: line-through;
 	margin-right: 10px;
+	background: aliceblue;
+	padding: 5px;
+	border-radius: 4px;
+	font-size: 12px;
 }
 
 .actual-price{
-	color: #b12704;
+	// color: #b12704;
+	color: #333;
+	font-weight: 500;
 }
 
-.buy-now{
-	width: 100%;
+.primary-action{
+	border-radius: 4px;
+	background-color: $main-color;
+	color: #fff;
+	padding: 10px 15px;
+	font-size: 14px;
+}
+
+.primary-action:hover{
+	background-color: $btn-hover;
+	color: #fff;
+}
+
+
+.secundary-action{
+	border-radius: 4px;
+	border-color: $main-color;
+	color: $main-color;
+	padding: 10px 15px;
+	font-size: 14px;
+}
+
+.secundary-action:hover{
+	border-color: $btn-hover;
+	color: $btn-hover;
+}
+
+.tertiary-action{
+
 }
 
 .section-divider{
@@ -263,6 +343,32 @@ div.progress{
 
 .input-component select{
 	height: 45px;
+	font-size: 1rem;
+}
+
+#color-selection{
+	list-style-type: none;
+	text-decoration: none;
+	padding: 0px;
+	display: flex;
+	flex-direction: row;
+}
+
+.colorPicker{
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
+	border: 2px solid #eee;
+	border-radius: 50%;
+}
+
+[data-color="white"] {
+	background-color: white;
+}
+
+[data-color="pink"] {
+	background-color: lightpink;
 }
 
 .description{
@@ -354,6 +460,23 @@ div.progress{
 	margin-bottom: 10px;
 }
 
+.comment-footer{
+	display: flex;
+}
+
+.user-info{
+	padding-left: 10px;
+}
+
+.user-image{
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin-right: 5px;
+	background-color: #eee;
+	border-radius: 50%;
+}
+
 .review-header{
 	display: flex;
 	justify-content: space-between;
@@ -392,11 +515,6 @@ div.progress{
     -webkit-appearance: none;
 }
 
-
-.centralize-content{
-	text-align: center;
-}
-
 .footer{
 	padding-top: 15px;
 	font-size: 12px;
@@ -409,25 +527,40 @@ div.progress{
 
 
 @media (min-width: 576px) {
-
+ // .secundary-action{
+	//  width: 100%;
+ // }
+ // .primary-action{
+	// width: 100%;
+ // }
 
 }
 
 @media (min-width: 768px) {
 
+
+
 }
 
 @media (min-width: 992px) {
+
+	.product-images{
+		padding-left: 0px;
+		display: block;
+	}
+	.content-order{
+		flex-direction: row;
+	}
+
 	.comment-note{
 		text-align: right;
 	}
-
 
 }
 
 @media (min-width: 1200px) {
 
-	$menu-color: #7122fa;
+	$menu-color: $main-color;
 
 	.menu-item a{
 		align-items: center;
@@ -466,6 +599,12 @@ div.progress{
 
 	.menu-item .dropdown-menu{
 		border-radius: 0px;
+		padding: 0px;
+	}
+
+	.dropdown-menu.show{
+		margin-top: -3px;
+		border-color: #eee;
 	}
 
 	.lgr-header-elements{
