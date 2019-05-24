@@ -2,19 +2,6 @@ body {
   background-color: #fbfbfb;
 }
 
-div.container.section-header {
-  height: 45px;
-  align-items: center;
-}
-
-.lgr-header-elements {
-  display: none;
-}
-
-.realtives {
-  position: relative;
-}
-
 #owl-demo .item {
   margin: 3px;
   color: #FFF;
@@ -90,6 +77,33 @@ header nav.heading .container .nav-toggler {
 header form {
   display: block;
 }
+header .special-offer {
+  background-color: #444;
+  color: #fff;
+  padding: 1px;
+  font-weight: bold;
+  text-align: center;
+}
+header .special-offer p {
+  margin-top: 10px;
+}
+
+#breadcrumb {
+  padding: 5px;
+  text-decoration: none;
+  list-style-type: none;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+#breadcrumb li {
+  display: inline;
+  font-size: 14px;
+}
+#breadcrumb li a {
+  color: #777;
+  text-decoration: none;
+}
+
 .content {
   background-color: #fff;
   border-radius: 8px;
@@ -178,26 +192,22 @@ header form {
   font-size: 20px;
 }
 
-div.progress {
-  margin-bottom: 0px;
-}
-
-.progress .time-limit {
-  height: 5px;
-  margin-bottom: 0px;
-}
-
-.time-limit > .progress-bar {
-  color: #FF7676;
-  background-color: #FF7676;
-}
-
-.stock-component {
+#stock-component {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
-.stock-data {
+#stock-component .progress {
+  margin-bottom: 0px;
+}
+#stock-component .progress .time-limit {
+  height: 5px;
+  margin-bottom: 0px;
+}
+#stock-component .time-limit > .progress-bar {
+  color: #FF7676;
+  background-color: #FF7676;
+}
+#stock-component .stock-data {
   display: flex;
   justify-content: space-between;
   font-size: 12px;
@@ -206,18 +216,6 @@ div.progress {
 
 .time-remaining {
   color: #b12704;
-}
-
-.special-offer {
-  background-color: #444;
-  color: #fff;
-  font-size: 12px;
-  padding: 10px;
-  font-weight: bold;
-}
-
-.special-offer p {
-  margin-top: 10px;
 }
 
 .offer-large {
@@ -254,6 +252,11 @@ div.progress {
 .primary-action:hover {
   background-color: #FFA7A7;
   color: #fff;
+}
+
+#main-actions button {
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .secundary-action {
@@ -327,13 +330,17 @@ div.progress {
   flex-direction: row;
 }
 
-.colorPicker {
+.colorPicker a {
   display: block;
   width: 30px;
   height: 30px;
   margin-right: 5px;
   border: 2px solid #eee;
   border-radius: 50%;
+}
+
+.colorPicker.active a {
+  border-color: #FF7676;
 }
 
 [data-color=white] {
@@ -401,15 +408,57 @@ div.progress {
 }
 
 .review-section {
-  text-align: center;
+  text-align: left;
 }
 
 #comments {
   text-align: left;
 }
 
+#review-filter {
+  list-style-type: none;
+  text-decoration: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  margin: -5px;
+}
+
+#review-filter-section {
+  text-align: center;
+}
+
+#review-filter li {
+  margin: 5px;
+}
+
+.login {
+  font-weight: bold;
+  text-decoration: none !important;
+  color: #333;
+}
+
+.login:hover {
+  color: #777;
+}
+
+.review-title h2 > span {
+  font-weight: 400;
+}
+
+.star-filter {
+  background-color: #eee;
+  border-radius: 20px;
+  padding: 5px;
+  white-space: nowrap;
+}
+
 .overall {
   margin-bottom: 20px;
+}
+
+.test {
+  justify-content: space-between;
 }
 
 .comment {
@@ -417,6 +466,7 @@ div.progress {
   text-align: left;
   border-radius: 8px;
   border: 1px #eee solid;
+  background-color: #fff;
   padding: 20px;
 }
 
@@ -436,13 +486,16 @@ div.progress {
 
 .comment-footer {
   display: flex;
+  justify-content: space-between;
 }
 
-.user-info {
+#user {
+  display: flex;
+}
+#user .user-info {
   padding-left: 10px;
 }
-
-.user-image {
+#user .user-image span {
   display: block;
   width: 50px;
   height: 50px;
@@ -451,9 +504,30 @@ div.progress {
   border-radius: 50%;
 }
 
-.review-header {
+.review-title {
+  text-align: left;
+  font-weight: bold;
   display: flex;
   justify-content: space-between;
+}
+
+#new-review {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#new-review button {
+  font-size: 12px;
+  width: 100%;
+}
+
+#review-header h2 {
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+#more-comments {
+  text-align: center;
 }
 
 .newsletter {
@@ -461,6 +535,7 @@ div.progress {
   color: #808080;
   padding: 15px;
   margin-top: 20px;
+  text-align: center;
 }
 
 .newsletter [data-icon] {
@@ -487,6 +562,7 @@ div.progress {
   background: #444444;
   color: white;
   border: 0;
+  font-size: 14px;
   -webkit-appearance: none;
 }
 
@@ -499,6 +575,15 @@ div.progress {
   padding-top: 10px;
 }
 
+@media (min-width: 768px) {
+  #new-review {
+    text-align: right;
+  }
+
+  #new-review button {
+    width: inherit;
+  }
+}
 @media (min-width: 992px) {
   .product-images {
     padding-left: 0px;
@@ -571,10 +656,6 @@ div.progress {
 
   .offer-large {
     display: block;
-  }
-
-  .offer-small {
-    display: none;
   }
 }
 
