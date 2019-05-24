@@ -121,7 +121,7 @@
   <div class="container">
     <ol id="breadcrumb">
       <li><a href="">Início</a></li>
-      <li><a href="">Personalizáveis</a></li>
+      <li><span> > </span><a href="">Personalizáveis</a></li>
     </ol>
   </div>
 
@@ -233,7 +233,7 @@
     				</div>
     			</div>
     			<div class="form-group row input-component">
-    				<label for="colFormLabel" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">COR: <span>Branco</span></label>
+    				<label for="colFormLabel" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">COR: <span id="actual-color">WHITE</span></label>
     				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
     					<!-- <input type="text" class="form-control" id="colFormLabel"> -->
               <ul id="color-selection">
@@ -323,50 +323,57 @@
           </div>
         </div>
 
-
-        <div class="test">
-          <div class="overall">
-      		</div>
-          <div id="review-filter-section">
-            <ul id="review-filter">
-              <li class="star-filter"> all review</li>
-              <li class="star-filter one-star">
+        <div id="review-filter-section">
+          <ul id="review-filter">
+            <li class="star-filter active">
+              <a href="#">all review</a>
+            </li>
+            <li class="star-filter one-star">
+              <a href="#">
                 <span><i class="fas fa-star"></i></span>
                 <span><i class="far fa-star"></i></span>
                 <span><i class="far fa-star"></i></span>
                 <span><i class="far fa-star"></i></span>
                 <span><i class="far fa-star"></i></span>
-              </li>
-              <li class="star-filter two-star">
+              </a>
+            </li>
+            <li class="star-filter two-star">
+              <a href="#">
                 <span><i class="fas fa-star"></i></span>
                 <span><i class="fas fa-star"></i></span>
                 <span><i class="far fa-star"></i></span>
                 <span><i class="far fa-star"></i></span>
                 <span><i class="far fa-star"></i></span>
-              </li>
-              <li class="star-filter three-star">
+              </a>
+            </li>
+            <li class="star-filter three-star">
+              <a href="#">
                 <span><i class="fas fa-star"></i></span>
                 <span><i class="fas fa-star"></i></span>
                 <span><i class="fas fa-star"></i></span>
                 <span><i class="far fa-star"></i></span>
                 <span><i class="far fa-star"></i></span>
-              </li>
-              <li class="star-filter four-star">
+              </a>
+            </li>
+            <li class="star-filter four-star">
+              <a href="#">
                 <span><i class="fas fa-star"></i></span>
                 <span><i class="fas fa-star"></i></span>
                 <span><i class="fas fa-star"></i></span>
                 <span><i class="fas fa-star"></i></span>
                 <span><i class="far fa-star"></i></span>
-              </li>
-              <li class="star-filter five-star">
+              </a>
+            </li>
+            <li class="star-filter five-star">
+              <a href="#">
                 <span><i class="fas fa-star"></i></span>
                 <span><i class="fas fa-star"></i></span>
                 <span><i class="fas fa-star"></i></span>
                 <span><i class="fas fa-star"></i></span>
                 <span><i class="fas fa-star"></i></span>
-              </li>
-            </ul>
-          </div>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
       <div id="comments">

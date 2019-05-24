@@ -9,33 +9,9 @@ body{
 	background-color: $body-bg;
 }
 
-	#owl-demo .item{
-			margin: 3px;
-			color: #FFF;
-			-webkit-border-radius: 3px;
-			-moz-border-radius: 3px;
-			border-radius: 3px;
-			text-align: center;
-	}
-#owl-demo .item img{
-	width:100%;
-	height:100px;
+.lgr-header-elements {
+  display: none;
 }
-	.customNavigation{
-		text-align: right;
-	margin-top:10px;
-	margin-bottom:3px;
-	padding-bottom:3px;
-	border-bottom:2px solid #333;
-	}
-	.customNavigation a{
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	}
 
 select{
 	font-size: 1rem;
@@ -75,6 +51,8 @@ header {
 	nav.heading {
 		flex-wrap: wrap;
 		font-size: 14px;
+		margin-left: -16px;
+		margin-right: -16px;
 
 		.container{
 			.nav-toggler {
@@ -90,6 +68,16 @@ header {
 		input{
 
 		}
+	}
+
+	.login{
+		font-weight: bold;
+		text-decoration: none !important;
+		color: $base-text;
+	}
+
+	.login:hover{
+		color: $text-anchor-hover;
 	}
 
 	.special-offer{
@@ -285,9 +273,11 @@ header {
 	color: #fff;
 }
 
-#main-actions button{
-	width: 100%;
-	margin-bottom: 10px;
+#main-actions{
+	button{
+		width: 100%;
+		margin-bottom: 10px;
+	}
 }
 
 .secundary-action{
@@ -301,10 +291,6 @@ header {
 .secundary-action:hover{
 	border-color: $btn-hover;
 	color: $btn-hover;
-}
-
-.tertiary-action{
-
 }
 
 .section-divider{
@@ -363,26 +349,30 @@ header {
 	padding: 0px;
 	display: flex;
 	flex-direction: row;
-}
 
-.colorPicker a{
-	display: block;
-	width: 30px;
-	height: 30px;
-	margin-right: 5px;
-	border: 2px solid #eee;
-	border-radius: 50%;
-}
-.colorPicker.active a{
-	border-color: $main-color;
-}
+	.colorPicker a{
+		display: block;
+		width: 30px;
+		height: 30px;
+		margin-right: 5px;
+		border: 2px solid #eee;
+		border-radius: 50%;
 
-[data-color="white"] {
-	background-color: white;
-}
+		.colorPicker.active a{
+			border-color: $main-color;
 
-[data-color="pink"] {
-	background-color: lightpink;
+			[data-color="branco"] {
+				background-color: white;
+			}
+
+			[data-color="rosa"] {
+				background-color: lightpink;
+			}
+
+		}
+
+	}
+
 }
 
 .description{
@@ -444,10 +434,6 @@ header {
 	text-align: left;
 }
 
-#comments{
-	text-align: left;
-}
-
 #review-filter{
 	list-style-type: none;
 	text-decoration: none;
@@ -458,23 +444,61 @@ header {
 }
 #review-filter-section{
 	text-align: center;
+	margin: 20px;
+	justify-content: space-between;
+
+	.star-filter{
+		background-color: #eee;
+		border-radius: 20px;
+		padding: 5px 10px;
+		margin: 5px;
+		white-space: nowrap;
+	}
+
+	.star-filter.active{
+		background-color: $main-color;
+		color: white;
+
+		a{
+			color: #fff;
+		}
+	}
+
+	a{
+		color: $text-anchor-hover;
+		text-decoration: none;
+		list-style-type: none;
+	}
+
 }
 
-#review-filter li{
-	margin: 5px;
-}
+#comments{
+	text-align: left;
 
-#review-header{
-}
+	.comment-footer{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
 
-.login{
-	font-weight: bold;
-	text-decoration: none !important;
-	color: $base-text;
-}
+		.opinion{
+			font-size: 14px;
+			span{
+				padding: 5px;
+				a{
+					color: $text-anchor-hover;
+					text-decoration: none;
+					list-style-type: none;
+				}
+				a:hover{
+					color: $base-text;
+				}
+			}
+		}
+	}
 
-.login:hover{
-	color: $text-anchor-hover;
+
+
+
 }
 
 .review-title h2 > span{
@@ -482,20 +506,7 @@ header {
 }
 
 
-.star-filter{
-	background-color: #eee;
-	border-radius: 20px;
-	padding: 5px;
-	white-space: nowrap;
-}
 
-.overall{
-	margin-bottom: 20px;
-}
-
-.test{
-	justify-content: space-between;
-}
 
 .comment{
 	margin-top: 15px;
@@ -523,6 +534,7 @@ header {
 .comment-footer{
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-end;
 }
 
 #user{
