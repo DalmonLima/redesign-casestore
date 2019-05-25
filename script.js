@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+  var newColor;
+
+  var colorCode;
+
+  var author, title, commentText, reviewCount;
+  var commentsVisible = 0;
+  var nextLoad = 2;
+
   function getRandomSuggestion() {
       return (Math.floor(Math.random() * 4) +1);
   }
@@ -18,9 +26,8 @@ $(document).ready(function(){
     }
   }
 
-  //Make a question
+  //Loading comments
   function loadComment(){
-    var author, title, text, reviewCount;
 
     $.ajax({
       url: 'json/comments.json',
@@ -31,22 +38,22 @@ $(document).ready(function(){
       success: function(data){
 
         reviewCount = data.length;
-        
-        $('.reviewCount').append(reviewCount);
+        $('.reviewCount').html(reviewCount);
 
-        for (var i = 0; i < data.length; i++) {
-          author = data[i].author;
-          title = data[i].title;
-          text = data[i].text;
-          date = data[i].date;
-          review = 'product-review' + i;
+        nextLoad = commentsVisible+2;
 
+        for (commentsVisible; commentsVisible < nextLoad; commentsVisible++) {
+          author = data[commentsVisible].author;
+          title = data[commentsVisible].title;
+          commentText = data[commentsVisible].text;
+          date = data[commentsVisible].date;
+          review = 'product-review' + commentsVisible;
 
           $('#comments').append('<div id="'+review+'" class="comment"><div class="product-review-heading"><div class="review-header row"><div class="col-sm-12 col-md-12 col-lg-6 col-xl-6"><h5 class="product-review-title"></h5></div><div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 comment-note"><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="far fa-star"></i></span></div></div></div><div class="product-review-post"><p class="product-review-text"></p></div><div class="comment-footer"><div id="user"><div class="user-image"><span></span></div><div class="user-info"><div><span class="product-review-author"></span></div><div><span class="product-review-period"></span></div></div></div><span class="opinion"><span><a href=""><i class="fas fa-thumbs-up"></i></a><span>5</span></span><span><a href=""><i class="fas fa-thumbs-down"></i></a><span>5</span></span></span></div></div>')
 
           $('#' + review + ' .product-review-author').html(author);
           $('#' + review + ' .product-review-title').html(title);
-          $('#' + review + ' .product-review-text').html(text);
+          $('#' + review + ' .product-review-text').html(commentText);
           $('#' + review + ' .product-review-period').html(date);
         }
 
@@ -71,11 +78,26 @@ $(document).ready(function(){
   function colorUpdate(){
     $( ".colorPicker" ).click(function() {
       $('.colorPicker').removeClass('active');
-      var newColor = $(this).find("a").attr('data-color');
+      newColor = $(this).find("a").attr('data-color');
       $(this).addClass('active');
       $('#actual-color').html(newColor);
+
       return false;
     });
+  }
+
+  function colorCodeValidation() {
+    if (newColor == "rosa") {
+      colorCode = "FF7676";
+      console.log("rosinha");
+    }
+    else if(newColor == "branco"){
+      colorCode = "ffffff";
+      console.log("branquin");
+    }
+    else{
+      return;
+    }
   }
 
   function filterUpdate(){
@@ -86,6 +108,23 @@ $(document).ready(function(){
     });
   }
 
+  function preview(){
+
+      var name = $('#clientName').val();
+
+      var link = "https://preview.gocase.com.br/poeira-das-estrelas-manuscrita/glittercasesilver-iphone6/mockup?name=" + name + "&color=" + colorCode;
+
+      console.log(link);
+
+      $("#current-image").attr('src', link);
+
+  }
+
+  $("#apply-btn").click(function(){
+    colorCodeValidation();
+    preview();
+  });
+
   filterUpdate();
 
   colorUpdate();
@@ -95,5 +134,9 @@ $(document).ready(function(){
   loadComment();
 
   update();
+
+  $('#more-comments button').click(function(){
+    loadComment();
+  });
 
 });

@@ -277,21 +277,39 @@ header {
 	button{
 		width: 100%;
 		margin-bottom: 10px;
+
+		.secundary-action{
+			border-radius: 4px;
+			border-color: $main-color;
+			color: $main-color;
+			padding: 10px 15px;
+			font-size: 14px;
+		}
+
+		.secundary-action:hover{
+			border-color: $btn-hover;
+			color: $btn-hover;
+		}
+
 	}
+
 }
 
-.secundary-action{
+#apply-btn{
 	border-radius: 4px;
 	border-color: $main-color;
 	color: $main-color;
 	padding: 10px 15px;
 	font-size: 14px;
+	width: 100%;
 }
 
-.secundary-action:hover{
+#apply-btn:hover{
 	border-color: $btn-hover;
 	color: $btn-hover;
 }
+
+
 
 .section-divider{
 	background-color: #fff;
@@ -358,20 +376,19 @@ header {
 		border: 2px solid #eee;
 		border-radius: 50%;
 
-		.colorPicker.active a{
-			border-color: $main-color;
-
-			[data-color="branco"] {
-				background-color: white;
-			}
-
-			[data-color="rosa"] {
-				background-color: lightpink;
-			}
-
-		}
-
 	}
+	.colorPicker.active a{
+		border-color: $main-color;
+	}
+
+	a[data-color="branco"] {
+		background-color: white;
+	}
+
+	a[data-color="rosa"] {
+		background-color: lightpink;
+	}
+
 
 }
 
