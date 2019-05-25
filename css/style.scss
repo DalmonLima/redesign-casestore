@@ -277,20 +277,18 @@ header {
 	button{
 		width: 100%;
 		margin-bottom: 10px;
+	}
+	button.secundary-action{
+		border-radius: 4px;
+		border-color: $main-color;
+		color: $main-color;
+		padding: 10px 15px;
+		font-size: 14px;
+	}
 
-		.secundary-action{
-			border-radius: 4px;
-			border-color: $main-color;
-			color: $main-color;
-			padding: 10px 15px;
-			font-size: 14px;
-		}
-
-		.secundary-action:hover{
-			border-color: $btn-hover;
-			color: $btn-hover;
-		}
-
+	button.secundary-action:hover{
+		border-color: $btn-hover;
+		color: $btn-hover;
 	}
 
 }

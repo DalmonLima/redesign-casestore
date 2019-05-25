@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   var newColor;
 
-  var colorCode;
+  var colorCode = "ffffff";
 
   var author, title, commentText, reviewCount;
   var commentsVisible = 0;
@@ -68,7 +68,6 @@ $(document).ready(function(){
     $( ".preview-images" ).click(function() {
       var myImage = $(this).find('img').attr('src');
       $('.preview-images').removeClass('active');
-      console.log(myImage);
       $("#current-image").attr("src",myImage);
       $(this).addClass('active');
       return false;
@@ -89,11 +88,9 @@ $(document).ready(function(){
   function colorCodeValidation() {
     if (newColor == "rosa") {
       colorCode = "FF7676";
-      console.log("rosinha");
     }
     else if(newColor == "branco"){
       colorCode = "ffffff";
-      console.log("branquin");
     }
     else{
       return;
@@ -113,8 +110,6 @@ $(document).ready(function(){
       var name = $('#clientName').val();
 
       var link = "https://preview.gocase.com.br/poeira-das-estrelas-manuscrita/glittercasesilver-iphone6/mockup?name=" + name + "&color=" + colorCode;
-
-      console.log(link);
 
       $("#current-image").attr('src', link);
 
