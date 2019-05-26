@@ -38,6 +38,10 @@ select {
 header {
   background-color: #fff;
   font-size: 12px;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0px;
 }
 header nav.heading {
   flex-wrap: wrap;
@@ -48,6 +52,9 @@ header nav.heading {
 header nav.heading .container .nav-toggler {
   border: 0px solid transparent !important;
   background-color: #eee;
+}
+header nav.heading #bag {
+  font-size: 25px;
 }
 header form {
   display: block;
@@ -69,6 +76,16 @@ header .special-offer {
 }
 header .special-offer p {
   margin-top: 10px;
+}
+
+.dropdown-menu.show {
+  margin-top: -3px;
+  border-color: #eee;
+}
+
+.menu-item .dropdown-menu {
+  border-radius: 0px;
+  padding: 0px;
 }
 
 #breadcrumb {
@@ -409,12 +426,12 @@ header .special-offer p {
   flex-wrap: wrap;
   padding-left: 0px;
   margin: -5px;
+  justify-content: center;
 }
 
 #review-filter-section {
   text-align: center;
   margin: 20px;
-  justify-content: space-between;
 }
 #review-filter-section .star-filter {
   background-color: #eee;
@@ -569,9 +586,10 @@ header .special-offer p {
   -webkit-appearance: none;
 }
 
-.footer {
+footer {
   padding-top: 15px;
   font-size: 12px;
+  text-align: center;
 }
 
 .footer p {
@@ -633,16 +651,6 @@ header .special-offer p {
     border-bottom: 3px solid #FF7676;
     transform: translate(0%, 0px);
     transition-duration: 0.7s;
-  }
-
-  .menu-item .dropdown-menu {
-    border-radius: 0px;
-    padding: 0px;
-  }
-
-  .dropdown-menu.show {
-    margin-top: -3px;
-    border-color: #eee;
   }
 
   .lgr-header-elements {

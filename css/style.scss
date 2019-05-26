@@ -25,7 +25,6 @@ select{
 	border-top: 1px solid #eee
 }
 
-
 .search{
 	padding: 0px 30px;
 }
@@ -47,6 +46,10 @@ header {
 
 	background-color: #fff;
 	font-size: 12px;
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	top: 0px;
 
 	nav.heading {
 		flex-wrap: wrap;
@@ -60,14 +63,14 @@ header {
 				background-color: #eee;
 			}
 		}
+
+		#bag {
+			font-size: 25px;
+		}
 	}
 
 	form {
 		display: block;
-
-		input{
-
-		}
 	}
 
 	.login{
@@ -92,6 +95,16 @@ header {
 		margin-top: 10px;
 	}
 
+}
+
+.dropdown-menu.show{
+	margin-top: -3px;
+	border-color: #eee;
+}
+
+.menu-item .dropdown-menu{
+	border-radius: 0px;
+	padding: 0px;
 }
 
 #breadcrumb{
@@ -228,13 +241,9 @@ header {
 
 }
 
-
-
 .time-remaining{
 	color: #b12704;
 }
-
-
 
 .offer-large{
 	display: none;
@@ -255,7 +264,6 @@ header {
 }
 
 .actual-price{
-	// color: #b12704;
 	color: #333;
 	font-weight: 500;
 }
@@ -456,11 +464,11 @@ header {
 	flex-wrap: wrap;
 	padding-left: 0px;
 	margin: -5px;
+	justify-content: center;
 }
 #review-filter-section{
 	text-align: center;
 	margin: 20px;
-	justify-content: space-between;
 
 	.star-filter{
 		background-color: #eee;
@@ -631,9 +639,10 @@ header {
     -webkit-appearance: none;
 }
 
-.footer{
+footer{
 	padding-top: 15px;
 	font-size: 12px;
+	text-align: center;
 }
 
 .footer p{
@@ -711,16 +720,6 @@ header {
 		// transition-timing-function: linear;
 		transform: translate(0%, 0px);
 		transition-duration: 0.7s;
-	}
-
-	.menu-item .dropdown-menu{
-		border-radius: 0px;
-		padding: 0px;
-	}
-
-	.dropdown-menu.show{
-		margin-top: -3px;
-		border-color: #eee;
 	}
 
 	.lgr-header-elements{

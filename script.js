@@ -1,16 +1,15 @@
 $(document).ready(function(){
 
-  var newColor;
+  let newColor;
+  let colorCode = "ffffff";
+  let author, title, commentText, reviewCount;
+  let commentsVisible = 0;
+  let nextLoad = 2;
 
-  var colorCode = "ffffff";
 
-  var author, title, commentText, reviewCount;
-  var commentsVisible = 0;
-  var nextLoad = 2;
-
-  function getRandomSuggestion() {
-      return (Math.floor(Math.random() * 4) +1);
-  }
+//Fixing header on top
+  let menuHeight = $('header').outerHeight();
+  $('#page-content').css('margin-top',menuHeight + "px");
 
   function update() {
     var element = document.getElementById("offer-progress");
@@ -39,6 +38,10 @@ $(document).ready(function(){
 
         reviewCount = data.length;
         $('.reviewCount').html(reviewCount);
+
+        // if (commentsVisible >= reviewCount ) {
+        //
+        // }
 
         nextLoad = commentsVisible+2;
 
