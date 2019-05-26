@@ -2,8 +2,8 @@ $(document).ready(function(){
 
   let newColor;
   let colorCode = "ffffff";
-  let author, title, commentText, reviewCount;
-  let commentsVisible = 0;
+  let author, title, reviewText, reviewCount;
+  let reviewsVisible = 0;
   let nextLoad = 2;
 
 
@@ -25,11 +25,11 @@ $(document).ready(function(){
     }
   }
 
-  //Loading comments
-  function loadComment(){
+  //Loading reviews
+  function loadReviews(){
 
     $.ajax({
-      url: 'json/comments.json',
+      url: 'json/reviews.json',
       type: 'GET',
       processData: false,
       contentType: false,
@@ -39,25 +39,24 @@ $(document).ready(function(){
         reviewCount = data.length;
         $('.reviewCount').html(reviewCount);
 
-        // if (commentsVisible >= reviewCount ) {
-        //
-        // }
+        nextLoad = reviewsVisible+2;
 
-        nextLoad = commentsVisible+2;
+        for (reviewsVisible; reviewsVisible < nextLoad; reviewsVisible++) {
+          author = data[reviewsVisible].author;
+          title = data[reviewsVisible].title;
+          reviewText = data[reviewsVisible].text;
+          date = data[reviewsVisible].date;
+          review = 'product-review' + reviewsVisible;
 
-        for (commentsVisible; commentsVisible < nextLoad; commentsVisible++) {
-          author = data[commentsVisible].author;
-          title = data[commentsVisible].title;
-          commentText = data[commentsVisible].text;
-          date = data[commentsVisible].date;
-          review = 'product-review' + commentsVisible;
-
-          $('#comments').append('<div id="'+review+'" class="comment"><div class="product-review-heading"><div class="review-header row"><div class="col-sm-12 col-md-12 col-lg-6 col-xl-6"><h5 class="product-review-title"></h5></div><div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 comment-note"><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="far fa-star"></i></span></div></div></div><div class="product-review-post"><p class="product-review-text"></p></div><div class="comment-footer"><div id="user"><div class="user-image"><span></span></div><div class="user-info"><div><span class="product-review-author"></span></div><div><span class="product-review-period"></span></div></div></div><span class="opinion"><span><a href=""><i class="fas fa-thumbs-up"></i></a><span>5</span></span><span><a href=""><i class="fas fa-thumbs-down"></i></a><span>5</span></span></span></div></div>')
+          $('#reviews').append('<div id="'+review+'" class="review"><div class="product-review-heading"><div class="review-summary row"><div class="col-sm-12 col-md-12 col-lg-6 col-xl-6"><h5 class="product-review-title"></h5></div><div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 review-note"><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="far fa-star"></i></span></div></div></div><div class="product-review-post"><p class="product-review-text"></p></div><div class="review-footer"><div id="user"><div class="user-image"><span></span></div><div class="user-info"><div><span class="product-review-author"></span></div><div><span class="product-review-period"></span></div></div></div><span class="opinion"><span><a href=""><i class="fas fa-thumbs-up"></i></a><span>5</span></span><span><a href=""><i class="fas fa-thumbs-down"></i></a><span>5</span></span></span></div></div>')
 
           $('#' + review + ' .product-review-author').html(author);
           $('#' + review + ' .product-review-title').html(title);
-          $('#' + review + ' .product-review-text').html(commentText);
+          $('#' + review + ' .product-review-text').html(reviewText);
           $('#' + review + ' .product-review-period').html(date);
+        }
+        if (reviewsVisible >= reviewCount) {
+          $('#more-reviews button').remove();
         }
 
       },
@@ -123,18 +122,18 @@ $(document).ready(function(){
     preview();
   });
 
+  $('#more-reviews button').click(function(){
+    loadReviews();
+  });
+
   filterUpdate();
 
   colorUpdate();
 
   imageUpdate();
 
-  loadComment();
+  loadReviews();
 
   update();
-
-  $('#more-comments button').click(function(){
-    loadComment();
-  });
 
 });

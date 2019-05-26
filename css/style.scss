@@ -457,48 +457,82 @@ header {
 	text-align: left;
 }
 
-#review-filter{
-	list-style-type: none;
-	text-decoration: none;
-	display: inline-flex;
-	flex-wrap: wrap;
-	padding-left: 0px;
-	margin: -5px;
-	justify-content: center;
-}
+
 #review-filter-section{
 	text-align: center;
-	margin: 20px;
+	margin-top: 20px;
 
-	.star-filter{
-		background-color: #eee;
-		border-radius: 20px;
-		padding: 5px 10px;
-		margin: 5px;
-		white-space: nowrap;
-	}
-
-	.star-filter.active{
-		background-color: $main-color;
-		color: white;
-
-		a{
-			color: #fff;
-		}
-	}
-
-	a{
-		color: $text-anchor-hover;
-		text-decoration: none;
+	#review-filter{
 		list-style-type: none;
+		text-decoration: none;
+		display: inline-flex;
+		flex-wrap: wrap;
+		padding-left: 0px;
+		margin: -5px;
+		justify-content: center;
+
+		.star-filter{
+			background-color: #eee;
+			border-radius: 4px;
+			padding: 5px 10px;
+			margin: 5px;
+			white-space: nowrap;
+			width: 100%;
+
+			a{
+				color: $base-text;
+				text-decoration: none;
+				list-style-type: none;
+
+				.star-filter-content{
+					display: flex;
+					justify-content: space-between;
+				}
+
+			}
+
+		}
+
+		.star-filter:hover a{
+			color: $text-anchor-hover;
+		}
+
+		.star-filter.active{
+			background-color: #5c5c5c;
+
+			a{
+				color: white;
+				text-decoration: none;
+				list-style-type: none;
+			}
+
+		}
+
 	}
 
 }
 
-#comments{
-	text-align: left;
+a{
+	color: $text-anchor-hover;
+	text-decoration: none;
+	list-style-type: none;
+}
 
-	.comment-footer{
+
+#reviews{
+	text-align: left;
+	margin-top: 20px;
+
+	.review{
+		margin-bottom: 15px;
+		text-align: left;
+		border-radius: 8px;
+		border: 1px #eee solid;
+		background-color: $content-bg;
+		padding: 20px;
+	}
+
+	.review-footer{
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
@@ -506,7 +540,7 @@ header {
 		.opinion{
 			font-size: 14px;
 			span{
-				padding: 5px;
+				padding: 3px;
 				a{
 					color: $text-anchor-hover;
 					text-decoration: none;
@@ -519,25 +553,10 @@ header {
 		}
 	}
 
-
-
-
 }
 
 .review-title h2 > span{
 	font-weight: 400;
-}
-
-
-
-
-.comment{
-	margin-top: 15px;
-	text-align: left;
-	border-radius: 8px;
-	border: 1px #eee solid;
-	background-color: $content-bg;
-	padding: 20px;
 }
 
 .product-review-period{
@@ -552,12 +571,6 @@ header {
 
 .product-review-heading{
 	margin-bottom: 10px;
-}
-
-.comment-footer{
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
 }
 
 #user{
@@ -595,12 +608,12 @@ header {
 	width: 100%;
 }
 
-#review-header h2{
+#review-summary h2{
 	font-size: 18px;
 	padding-right: 10px;
 }
 
-#more-comments{
+#more-reviews{
 	text-align: center;
 }
 
@@ -677,7 +690,7 @@ footer{
 		flex-direction: row;
 	}
 
-	.comment-note{
+	.review-note{
 		text-align: right;
 	}
 

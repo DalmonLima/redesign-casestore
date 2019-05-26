@@ -419,7 +419,11 @@ header .special-offer p {
   text-align: left;
 }
 
-#review-filter {
+#review-filter-section {
+  text-align: center;
+  margin-top: 20px;
+}
+#review-filter-section #review-filter {
   list-style-type: none;
   text-decoration: none;
   display: inline-flex;
@@ -428,65 +432,75 @@ header .special-offer p {
   margin: -5px;
   justify-content: center;
 }
-
-#review-filter-section {
-  text-align: center;
-  margin: 20px;
-}
-#review-filter-section .star-filter {
+#review-filter-section #review-filter .star-filter {
   background-color: #eee;
-  border-radius: 20px;
+  border-radius: 4px;
   padding: 5px 10px;
   margin: 5px;
   white-space: nowrap;
+  width: 100%;
 }
-#review-filter-section .star-filter.active {
-  background-color: #FF7676;
-  color: white;
-}
-#review-filter-section .star-filter.active a {
-  color: #fff;
-}
-#review-filter-section a {
-  color: #777;
+#review-filter-section #review-filter .star-filter a {
+  color: #333;
   text-decoration: none;
   list-style-type: none;
 }
-
-#comments {
-  text-align: left;
-}
-#comments .comment-footer {
+#review-filter-section #review-filter .star-filter a .star-filter-content {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
 }
-#comments .comment-footer .opinion {
-  font-size: 14px;
+#review-filter-section #review-filter .star-filter:hover a {
+  color: #777;
 }
-#comments .comment-footer .opinion span {
-  padding: 5px;
+#review-filter-section #review-filter .star-filter.active {
+  background-color: #5c5c5c;
 }
-#comments .comment-footer .opinion span a {
+#review-filter-section #review-filter .star-filter.active a {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
   color: #777;
   text-decoration: none;
   list-style-type: none;
 }
-#comments .comment-footer .opinion span a:hover {
-  color: #333;
-}
 
-.review-title h2 > span {
-  font-weight: 400;
+#reviews {
+  text-align: left;
+  margin-top: 20px;
 }
-
-.comment {
-  margin-top: 15px;
+#reviews .review {
+  margin-bottom: 15px;
   text-align: left;
   border-radius: 8px;
   border: 1px #eee solid;
   background-color: #fff;
   padding: 20px;
+}
+#reviews .review-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#reviews .review-footer .opinion {
+  font-size: 14px;
+}
+#reviews .review-footer .opinion span {
+  padding: 3px;
+}
+#reviews .review-footer .opinion span a {
+  color: #777;
+  text-decoration: none;
+  list-style-type: none;
+}
+#reviews .review-footer .opinion span a:hover {
+  color: #333;
+}
+
+.review-title h2 > span {
+  font-weight: 400;
 }
 
 .product-review-period {
@@ -501,12 +515,6 @@ header .special-offer p {
 
 .product-review-heading {
   margin-bottom: 10px;
-}
-
-.comment-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
 }
 
 #user {
@@ -541,12 +549,12 @@ header .special-offer p {
   width: 100%;
 }
 
-#review-header h2 {
+#review-summary h2 {
   font-size: 18px;
   padding-right: 10px;
 }
 
-#more-comments {
+#more-reviews {
   text-align: center;
 }
 
@@ -615,7 +623,7 @@ footer {
     flex-direction: row;
   }
 
-  .comment-note {
+  .review-note {
     text-align: right;
   }
 }
