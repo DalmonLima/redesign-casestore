@@ -47,6 +47,7 @@ header {
 	background-color: #fff;
 	font-size: 12px;
 	position: fixed;
+	// position: absolute;
 	z-index: 10;
 	width: 100%;
 	top: 0px;
@@ -95,6 +96,10 @@ header {
 		margin-top: 10px;
 	}
 
+	#navbar-menu{
+		justify-content: center;
+	}
+
 }
 
 .dropdown-menu.show{
@@ -125,6 +130,12 @@ header {
 
 	}
 
+	li:not(:first-child):before {
+    content: " /";
+		color: $text-anchor-hover;
+		padding-right: 5px;
+	}
+
 }
 
 .content{
@@ -150,11 +161,6 @@ header {
 [data-icon]{
   font-size: 20px;
   color: #808080;
-}
-
-.product-header{
-	display: flex;
-	justify-content: space-between;
 }
 
 .page-section{
@@ -199,6 +205,43 @@ header {
 .product-info{
 	margin-top: 20px;
 	margin-bottom: 20px;
+
+	.product-header{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.product-price{
+		font-size: 18px;
+		margin-top: 10px;
+	}
+	#stock-component{
+		margin-top: 20px;
+		margin-bottom: 20px;
+
+		.progress{
+			margin-bottom: 0px;
+		}
+
+		.progress .time-limit{
+			height: 5px;
+			margin-bottom: 0px;
+		}
+
+		.time-limit > .progress-bar{
+			color: $main-color;
+			background-color: $main-color;
+		}
+
+		.stock-data{
+			display: flex;
+			justify-content: space-between;
+			font-size: 12px;
+			color: #808080;
+		}
+
+	}
+
 }
 
 .product-name{
@@ -214,43 +257,12 @@ header {
   font-size: 20px;
 }
 
-#stock-component{
-	margin-top: 20px;
-	margin-bottom: 20px;
-
-	.progress{
-		margin-bottom: 0px;
-	}
-
-	.progress .time-limit{
-		height: 5px;
-		margin-bottom: 0px;
-	}
-
-	.time-limit > .progress-bar{
-		color: $main-color;
-		background-color: $main-color;
-	}
-
-	.stock-data{
-		display: flex;
-		justify-content: space-between;
-		font-size: 12px;
-		color: #808080;
-	}
-
-}
-
 .time-remaining{
 	color: #b12704;
 }
 
 .offer-large{
 	display: none;
-}
-
-.product-price{
-	font-size: 18px;
 }
 
 .price-outdated{
@@ -403,24 +415,43 @@ header {
 	color: #808080;
 }
 
-.social{
-	list-style-type: none;
-	text-decoration: none;
-	display: flex;
-	padding: 0px;
-	width: 146px;
-	justify-content: space-between;
+.logo{
+	text-align: right;
 }
 
-.social-media{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 42px;
-	width: 42px;
-	padding-top: 8px;
-	background-color: #c4c4c4;
+.help{
+	text-align: left;
+	ul{
+		list-style-type: none;
+		font-size: 14px;
+	}
 }
+
+#social {
+	text-align: center;
+
+	h5{
+		font-size: 18px;
+	}
+
+	ul{
+	list-style-type: none;
+
+	display: flex;
+	padding: 0px;
+	justify-content: flex-start;
+
+
+		.social-media{
+			align-items: center;
+			font-size: 32px;
+			margin: 5px;
+			color: #777;
+		}
+	}
+}
+
+
 
 .social-media a{
 	color: #999;
@@ -559,9 +590,6 @@ header {
 
 }
 
-
-
-
 a{
 	color: $text-anchor-hover;
 	text-decoration: none;
@@ -572,6 +600,8 @@ a{
 #reviews{
 	text-align: left;
 	margin-top: 20px;
+	overflow-y: auto;
+	height: 420px;
 
 	.review{
 		margin-bottom: 15px;
@@ -722,9 +752,30 @@ footer{
 	font-size: 12px;
 	text-align: center;
 	margin-bottom: -60px;
+	margin-top: 20px;
+	padding-bottom: 80px;
 
 	p{
 		padding-top: 10px;
+	}
+
+	.foot_1{
+		justify-content: center;
+	}
+
+	.foot_1 a:hover{
+		text-decoration: none;
+		list-style-type: none;
+		color: $text-anchor-hover;
+	}
+
+	.foot_1>div{
+		margin: 0px 40px;
+		display: flex;
+	}
+
+	.foot_2{
+		padding: 20px 0px;
 	}
 
 }
@@ -746,10 +797,20 @@ footer{
 }
 
 @media (max-width: 576px) {
-
+	.foot_1{
+		display: none;
+	}
 }
 
 @media (min-width: 768px) {
+
+	// header{
+	// 	position: fixed;
+	// }
+	.foot_1{
+		display: flex;
+	}
+
 	#stick-bar{
 		display: none;
 	}
@@ -763,7 +824,7 @@ footer{
 	}
 
 	footer{
-		margin-bottom: 0px;
+		padding-bottom: 0px;
 	}
 
 }
