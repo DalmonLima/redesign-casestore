@@ -398,10 +398,14 @@ header .special-offer p {
   text-decoration: none;
   display: flex;
   padding: 0px;
-  justify-content: space-between;
-  margin-bottom: 0px;
+  justify-content: space-around;
+  margin: 0px -10px;
+  flex-wrap: wrap;
 }
-.suggestion-section .suggestion-carrousel ul .suggestion-carrousel-item {
+.suggestion-section .suggestion-carrousel ul li {
+  margin: 10px;
+}
+.suggestion-section .suggestion-carrousel ul li .suggestion-carrousel-item {
   display: inline-block;
   width: 200px;
   border-radius: 4px;
@@ -409,11 +413,21 @@ header .special-offer p {
   background-color: #fff;
   padding: 20px;
 }
-.suggestion-section .suggestion-carrousel ul .suggestion-carrousel-item div img {
+.suggestion-section .suggestion-carrousel ul li .suggestion-carrousel-item div img {
   max-width: 150px;
 }
-.suggestion-section .suggestion-carrousel ul .suggestion-carrousel-item:hover {
+.suggestion-section .suggestion-carrousel ul li .suggestion-carrousel-item div .product-name {
+  margin-top: 10px;
+  height: 40px;
+}
+.suggestion-section .suggestion-carrousel ul li .suggestion-carrousel-item div .product-name h5 {
+  font-size: 16px;
+}
+.suggestion-section .suggestion-carrousel ul li .suggestion-carrousel-item:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.suggestion-section .suggestion-carrousel ul li .suggestion-carrousel-item:hover h5 {
+  color: #777;
 }
 .suggestion-section .suggestion-carrousel ul a:hover {
   list-style-type: none;
@@ -572,15 +586,24 @@ a {
 #newsletter h4 {
   color: #333;
 }
+#newsletter .contact {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  position: relative;
+}
 #newsletter input[type=email] {
-  min-width: 250px;
-  max-width: 350px;
   padding-right: 100px;
   padding-left: 5px;
   padding-top: 4px;
-  font-size: 12px;
+  font-size: 14px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  max-width: 500px;
 }
 #newsletter input[type=submit] {
+  position: absolute;
   margin-left: -100px;
   height: 28px;
   width: 100px;
@@ -588,6 +611,7 @@ a {
   color: white;
   border: 0;
   font-size: 14px;
+  border-radius: 0px 4px 4px 0px;
   -webkit-appearance: none;
 }
 #newsletter i {
@@ -598,18 +622,42 @@ footer {
   padding-top: 15px;
   font-size: 12px;
   text-align: center;
+  margin-bottom: -60px;
 }
 footer p {
   padding-top: 10px;
 }
 
+#stick-bar {
+  position: fixed;
+  background-color: #fff;
+  height: 60px;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+}
+#stick-bar .actual-price {
+  font-size: 24px;
+}
+
 @media (min-width: 768px) {
+  #stick-bar {
+    display: none;
+  }
+
   #new-review {
     text-align: right;
   }
 
   #new-review button {
     width: inherit;
+  }
+
+  footer {
+    margin-bottom: 0px;
   }
 }
 @media (min-width: 992px) {
