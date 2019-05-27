@@ -126,6 +126,11 @@ $(document).ready(function(){
     loadReviews();
   });
 
+  $( ".dropdown" ).on( "mouseenter", function() {
+      $(this).find('.dropdown-toggle').click();
+      console.log("teste");
+  });
+
   filterUpdate();
 
   colorUpdate();

@@ -101,10 +101,11 @@ header {
 	}
 
 }
-
-.dropdown-menu.show{
-	margin-top: -3px;
-	border-color: #eee;
+#navbarDropdown{
+	.dropdown-menu.show{
+		margin-top: -3px;
+		border: 1px solid white;;
+	}
 }
 
 .menu-item .dropdown-menu{
@@ -789,7 +790,7 @@ footer{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	z-index: 100;
+	z-index: 2;
 
 	.actual-price{
 		font-size: 24px;
@@ -841,6 +842,11 @@ footer{
 
 	.review-note{
 		text-align: right;
+	}
+
+	.dropdown-menu.show{
+		margin-top: -3px;
+		border-color: #eee;
 	}
 
 }
