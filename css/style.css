@@ -81,14 +81,15 @@ header #navbar-menu {
   justify-content: center;
 }
 
-.dropdown-menu.show {
+#navbarDropdown .dropdown-menu.show {
   margin-top: -3px;
-  border-color: #eee;
+  border: 1px solid white;
 }
 
 .menu-item .dropdown-menu {
   border-radius: 0px;
   padding: 0px;
+  border: none;
 }
 
 #breadcrumb {
@@ -372,6 +373,8 @@ header #navbar-menu {
 
 .logo {
   text-align: right;
+  display: flex;
+  align-items: center;
 }
 
 .help {
@@ -674,7 +677,7 @@ footer .foot_2 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  z-index: 100;
+  z-index: 2;
 }
 #stick-bar .actual-price {
   font-size: 24px;
@@ -719,6 +722,11 @@ footer .foot_2 {
   .review-note {
     text-align: right;
   }
+
+  .dropdown-menu.show {
+    margin-top: -3px;
+    border-color: #eee;
+  }
 }
 @media (min-width: 1200px) {
   .menu-item a {
@@ -752,6 +760,11 @@ footer .foot_2 {
     border-bottom: 3px solid #FF7676;
     transform: translate(0%, 0px);
     transition-duration: 0.7s;
+  }
+
+  .menu-item .dropdown-menu {
+    border-radius: 0px;
+    padding: 0px;
   }
 
   .lgr-header-elements {
